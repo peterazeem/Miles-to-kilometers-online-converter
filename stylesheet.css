@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: 'Josefin Sans', Nabla regular, Quicksand, sans-serif;
+}
+
+body {
+    background-color: rgb(25, 21, 46);
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 15px;
+    margin-top: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+span {
+    font-size: 1.15em;
+}
+
+#conversor {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 15px;
+    background-color: rgb(31, 26, 53);
+    border-radius: 25px;
+    border: 1px solid rgb(40, 40, 71);
+    padding: 40px 80px;
+    box-shadow: 0px 0px 100px 5px rgba(5, 5, 8, 0.123);
+}
+
+form {
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+    justify-content: center;
+}
+
+input, button {
+     border-radius: 12px;
+     box-shadow: 0px 0px 40px 3px rgba(5, 5, 8, 0.185);
+}
+
+input {
+    border: 1px solid rgb(56, 56, 95);
+    background-color: rgb(38, 38, 66);
+    padding: 10px 15px;
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.1em;
+    text-align: center;
+}
+
+button {
+    color: rgb(184, 184, 223);
+    font-weight: bold;
+    border: none;
+    background-color: rgb(49, 49, 94);
+    padding: 13px 17px;
+    transform: scale(1);
+    transition: transform 0.25s;
+}
+
+button:hover {
+    color: rgb(49, 49, 49);
+    background-color: rgb(153, 204, 255);
+    transform: scale(1.05);
+    transition: transform 0.25s, color 0.25s;
+}
+
+input:focus{
+    outline: none;
+    border: 1px solid rgb(70, 51, 177);
+}
+
+#contenedor_resultado {
+    margin-top: 5%;
+}
+
+.errorColor {
+    color: rgb(255, 153, 153);
+}
+
+.correctColor {
+    color: rgb(153, 204, 255);
+}
